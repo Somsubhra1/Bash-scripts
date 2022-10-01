@@ -1,3 +1,4 @@
+#!/bin/bash
 # to extract type extract <path to archive>
 
 if [ $# -lt 1 ]; then
