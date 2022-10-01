@@ -15,6 +15,7 @@ git clone https://github.com/Somsubhra1/Bash-scripts.git
 cd utility-scripts
 export PATH="$(pwd):$PATH"
 ```
+
 ### 🔰 Download audio from YouTube
 
 Script: [youtube-music](youtube-music)  
@@ -25,3 +26,13 @@ Dependencies: [youtube-dl](https://github.com/rg3/youtube-dl), [ffmpeg](https://
 ```sh
 youtube-music "https://www.youtube.com/watch?v=HgfojLtSBTM"  
 youtube-music "https://www.youtube.com/watch?v=HgfojLtSBTM" mp3
+
+### 🔀 Merge video and audio together
+
+Script: [vamerge](vamerge)  
+Dependencies: [ffmpeg](https://www.ffmpeg.org/)
+
+```sh
+vamerge <path to video file> <path to audio file>
+# the order is important, first video, then audio
+```
