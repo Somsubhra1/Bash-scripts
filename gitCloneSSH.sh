@@ -2,8 +2,8 @@
 
 remote=$1
 
-username=""
-email=""
+username="$(git config --get user.name)"
+email="$(git config --get user.email)"
 
 cmd="git clone ${remote:0:4}${username}.${remote:4}"
 eval $cmd
