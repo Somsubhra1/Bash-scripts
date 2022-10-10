@@ -1,9 +1,9 @@
 #!/bin/sh
 
-#Purpose: To list the files created or updated within fourteen days from current date.
+#Purpose: To list the files created or upated within 14 days from the current date
 
-#USAGE: sh filecreat14.sh (no arguments required)
+find -atime -14 -mtime -14 | sort -u
 
-find-atime-14-mtime -14 | sort-u
+#Syntax: find -atime -n -mtime -n  | sort -u
 
-#end of script
+#n is the certain number of days from the current date
